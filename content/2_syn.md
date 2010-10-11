@@ -1,11 +1,14 @@
+!SLIDE section
+# Simulate Events #
+
 !SLIDE
-# Simulate events with jquery #
+# With jQuery #
 
     @@@ Javascript
     $("#myelement").click();
 
 !SLIDE execute
-# Simulate event with Syn #
+# With Syn #
 
     @@@ javaScript
     Syn.type("Hello", 'myinputtext');
@@ -22,3 +25,19 @@
 <center>
   <input type="submit" id="mysubmit" value="Hello Word" onclick="alert('plop');" />
 </center>
+
+    @@@ javaScript
+    $('#myinputtext').triggerSyn("type", "Hello");
+
+
+!SLIDE
+
+# With Syn (2) #
+
+    @@@ javaScript
+    Syn.type('ice water','title')
+       .type('ice and water','description')
+       .click({},'create')
+       .drag({to: 'favorites'},'newRecipe', function(){
+           ok($('#newRecipe').parents('#favorites').length);
+        });

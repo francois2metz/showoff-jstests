@@ -14,15 +14,15 @@
         return one + two;
     }
     test("calc should compute args", function() {
-       equals(2, calc(1, 1))
+       equals(calc(1, 1), 2, "== 2")
     });
 
 !SLIDE
 # Assertions #
 
     @@@ Javascript
-    equals(2, 2);
-    ok(true);
+    equals(2, 2, "2 == 2");
+    ok(true, "always true");
     same({pouet:'plop'}, {pouet:'plop'});
 
 !SLIDE
@@ -31,6 +31,9 @@
     @@@ Javascript
     ...
     module('calc');
+    test("plop", function() {
+    ...
+    module("menu");
     test("plop", function() {
     ...
 
@@ -63,7 +66,7 @@
           ok(true);
        }
        setTimeout(myAsyncCall, 10);
-   });
+    });
 
 !SLIDE
 # Async : Practice #

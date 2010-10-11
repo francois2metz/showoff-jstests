@@ -1,12 +1,15 @@
-!SLIDE
+!SLIDE section
 # Continuous integration #
 
-http://testswarm.com/
-
 !SLIDE
+# TestSwarm #
 
-<iframe src="http://swarm.af83.com/" width="100%" height="100%" />
+![test swarm](ts-swarm.png)
 
-!SLIDE
+!SLIDE iframe
 
-<iframe src="http://swarm.af83.com/job/3/" width="100%" height="100%" />
+<iframe src="http://swarm.jquery.org/" width="100%" />
+
+!SLIDE iframe
+
+<iframe src="http://swarm.jquery.org/job/100/" width="100%"  />
