@@ -1,0 +1,8 @@
+{
+  "name": "Qunit",
+  "sections": [
+    { "section": "begin" },
+    { "section": "content" },
+    { "section": "end" }
+  ]
+}
