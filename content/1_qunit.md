@@ -2,7 +2,7 @@
 # Why ? #
 
 !SLIDE section
-# How ? #
+# QUnit #
 
 !SLIDE
 
@@ -22,7 +22,15 @@
 
     @@@ Javascript
     equals(2, 2, "2 == 2");
+
+<br />
+
+    @@@ Javascript
     ok(true, "always true");
+
+<br />
+
+    @@@ Javascript
     same({pouet:'plop'}, {pouet:'plop'});
 
 !SLIDE
@@ -40,14 +48,13 @@
 !SLIDE
 # Situation #
 
-<iframe src="http://localhost:5280/af83/tests.html" width="100%" height="600px" />
+<iframe src="/image/content/tests.html?hello" width="100%" height="600px" />
 
 !SLIDE
-# Setup / TearDown #
+# Setup / Teardown #
 
     @@@ Javascript
-    ...
-    module('calc', {'setup' : function() {
+    module('calc', {setup : function() {
                      // called before each test
                    },
                    teardown: function() {
@@ -59,20 +66,18 @@
 # Async : Theory #
 
     @@@ Javascript
-    ...
     asyncTest('my asynchronous test', function() {
        function myAsyncCall() {
           start();
           ok(true);
        }
-       setTimeout(myAsyncCall, 10);
+       setTimeout(myAsyncCall, 1000);
     });
 
 !SLIDE
 # Async : Practice #
 
     @@@ Javascript
-    ...
     asyncTest('ajax call on server', function() {
        $('body').bind('ajaxComplete', function(e, xhr, settings) {
            start();
@@ -80,3 +85,8 @@
        });
        $.post('/pouet');
     });
+
+!SLIDE
+# Async: situation  #
+
+<iframe src="/image/content/tests.html?async" width="100%" height="600px" />

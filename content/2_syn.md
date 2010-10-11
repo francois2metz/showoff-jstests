@@ -7,11 +7,16 @@
     @@@ Javascript
     $("#myelement").click();
 
+<br /><br />
+
+    @@@ Javascript
+    $("#myelement").trigger('mycustomenvent');
+
 !SLIDE execute
 # With Syn #
 
     @@@ javaScript
-    Syn.type("Hello", 'myinputtext');
+    Syn.type("Hello", "myinputtext");
 
 <br />
 <center>
@@ -19,7 +24,7 @@
 </center>
 
     @@@ javaScript
-    Syn.click({}, 'mysubmit');
+    Syn.click({}, "mysubmit");
 
 <br />
 <center>
@@ -27,7 +32,7 @@
 </center>
 
     @@@ javaScript
-    $('#myinputtext').triggerSyn("type", "Hello");
+    $("#myinputtext").triggerSyn("type", "Hello");
 
 
 !SLIDE
