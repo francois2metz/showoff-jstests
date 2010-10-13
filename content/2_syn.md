@@ -10,7 +10,7 @@
 <br /><br />
 
     @@@ Javascript
-    $("#myelement").trigger('mycustomenvent');
+    $("#myelement").trigger('mycustomevent');
 
 !SLIDE execute
 # With Syn #
